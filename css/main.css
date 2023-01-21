@@ -1,11 +1,12 @@
 :root{
     --bg-dark-blue: #00143b;
     --bg-vrdark-blue: #00102f;
+    --blue-text: #0059ff;
 
     --sm: 1.4rem;
     --md: 1.6rem;
     --lg: 1.8rem;
-    --xlg: 2rem;
+    --xlg: 3rem;
     --xxlg: 5rem;
 }
 
@@ -109,7 +110,51 @@ aside{
 /* Parte principal de la página*/
 
 .title{
+    margin: 0 0 0 50px;
     font-size: var(--xxlg);
+    font-weight: 500;
+    color: var(--blue-text);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.container-stack{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stack-caption{
+    font-size: var(--xlg);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container-stack-img{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-stack{
+    margin-top: 15px;
+}
+
+.img-stack img{
+    border-radius: 12px;
+}
+
+.item-caption{
+    text-align: center;
+    font-size: var(--lg);
 }
 
 
