@@ -29,22 +29,22 @@
         <div class="topics">
             <ul>
                 <li>
-                    <a href="#">
-                        <div class="topic-button"><span>Biografía</span></div>
+                    <a href="#about">
+                        <div class="topic-button"><span>Sobre mi</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#stack">
                         <div class="topic-button"><span>Stack</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projects">
                         <div class="topic-button"><span>Proyectos</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#contact">
                         <div class="topic-button"><span>Contacto</span></div>
                     </a>
                 </li>
@@ -53,21 +53,38 @@
     </aside>
 
     <section>
-        <article>
-            <h1 class="title">Biografía</h1>
+        <article id="about">
+            <h1 class="title">Sobre mi</h1>
             <div class="container-bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto assumenda atque
-                    autem, cumque delectus dignissimos doloremque dolores ducimus earum esse, eum fuga iste itaque iusto
-                    laudantium nemo nulla officia, omnis provident quae quasi rem repudiandae totam ullam voluptatem
-                    voluptates? Accusamus ad, aliquam aut consectetur consequatur corporis deleniti dolor earum error
-                    est exercitationem facilis harum hic impedit inventore labore laboriosam laudantium minus modi
-                    necessitatibus nemo non numquam optio qui quia quod quos, reiciendis soluta sunt tempore temporibus
-                    ullam veniam vitae! Ab et itaque praesentium quasi velit. Adipisci beatae cupiditate, dolore eius
-                    illum laboriosam, modi nisi perferendis quasi quisquam repudiandae?</p>
+                <p>Mi mayor pasión es la programación, soy bastante autodidacta, me gusta aprender cosas nuevas todo
+                    el tiempo y estar en la vanguardia en el ámbito tecnológico, en la universidad he participado en el desarrollo
+                    de diferentes proyectos, con diferentes lenguajes de programación (C, C++, C#, Visual Basic, Kotlin, Java)
+                    utilizando diferentes librerias y frameworks como .Net, Xamarin y Bootstrap para plataformas de escritorio, Android
+                    y Web. También tomé el curso de harvard CS50.ni donde aprendí python y flask. Actualmente busco desempañarme como
+                    desarrollador Web, siempre estando en constante apredizaje y con muchas ganas de superarme.</p>
+            </div>
+            <div class="container-study">
+                <h2 class="stack-caption">#Nunca pares de aprender</h2>
+                <p>Actualmente estoy cursando...</p>
+
+                <div class="container-courses">
+                    <div class="course">
+                        <figure>
+                            <img src="./img/uca_logotipo.png" alt="Logo UCA">
+                            <figcaption class="item-caption">Ingeniería en Sistemas de Información</figcaption>
+                        </figure>
+                    </div>
+                    <div class="course">
+                        <figure>
+                            <img src="./img/Platzi-logo.png" alt="Logo Platzi">
+                            <figcaption class="item-caption">Desarrollo Web, inglés</figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </article>
 
-        <article>
+        <article id="stack">
             <h1 class="title">Stack</h1>
             <div class="container-stack">
                 <h2 class="stack-caption">Lenguajes de programación</h2>
@@ -124,26 +141,23 @@
             </div>
         </article>
 
-        <article>
+        <article id="projects">
             <h1 class="title">Proyectos</h1>
 
             <div class="container-projects">
                 <div class="project">
                     <figure class="img-project">
-                        <img src="./img/project1.png" alt="Imagen del proyecto">
+                        <img src="./img/capture-ahorcado.png" alt="Imagen del proyecto">
                         <figcaption class="project-caption">Ahorcado</figcaption>
                     </figure>
 
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eaque eum fugit
-                        libero provident quis sapiente sed. Accusamus accusantium architecto consequuntur eaque et fuga
-                        ipsam iusto officiis quam suscipit? Ad adipisci deserunt, dolorem eligendi exercitationem, id
-                        inventore laudantium magni modi nisi quae quia quidem ratione sequi soluta tempore velit?</p>
+                    <p class="project-description">Mi primer proyecto con JavaScript, un juego de ahorcado, con diferentes categorias de palabras, popups al momento de ganar o perder, cambio de color de los botones y aparición de las partes del cuerpo.</p>
                     <div class="container-button">
-                        <a href="#">
+                        <a href="https://gabox08.github.io/Ahorcado/">
                             <div class="project-button button-preview"><span>Preview</span></div>
                         </a>
 
-                        <a href="#">
+                        <a href="https://github.com/Gabox08/Ahorcado">
                             <div class="project-button button-github"><span>Github</span></div>
                         </a>
                     </div>
@@ -151,105 +165,40 @@
 
                 <div class="project">
                     <figure class="img-project">
-                        <img src="./img/project1.png" alt="Imagen del proyecto">
-                        <figcaption class="project-caption">Ahorcado</figcaption>
+                        <img src="./img/capture-rivia_sale.png" alt="Imagen del proyecto">
+                        <figcaption class="project-caption">Rivia Sale</figcaption>
                     </figure>
 
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eaque eum fugit
-                        libero provident quis sapiente sed. Accusamus accusantium architecto consequuntur eaque et fuga
-                        ipsam iusto officiis quam suscipit? Ad adipisci deserunt, dolorem eligendi exercitationem, id
-                        inventore laudantium magni modi nisi quae quia quidem ratione sequi soluta tempore velit?</p>
+                    <p class="project-description">Proyecto hecho con css Grid. Web de eComerce de sneakers, tiene inicio de sesión, registro, cambio de contraseña, detalle de producto, carrito, confirmación de compra e historial de ordenes </p>
                     <div class="container-button">
-                        <a href="#">
+                        <a href="https://gabox08.github.io/RiviaSale/">
                             <div class="project-button button-preview"><span>Preview</span></div>
                         </a>
 
-                        <a href="#">
+                        <a href="https://github.com/Gabox08/RiviaSale">
                             <div class="project-button button-github"><span>Github</span></div>
                         </a>
                     </div>
                 </div>
 
-                <div class="project">
-                    <figure class="img-project">
-                        <img src="./img/project1.png" alt="Imagen del proyecto">
-                        <figcaption class="project-caption">Ahorcado</figcaption>
-                    </figure>
-
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eaque eum fugit
-                        libero provident quis sapiente sed. Accusamus accusantium architecto consequuntur eaque et fuga
-                        ipsam iusto officiis quam suscipit? Ad adipisci deserunt, dolorem eligendi exercitationem, id
-                        inventore laudantium magni modi nisi quae quia quidem ratione sequi soluta tempore velit?</p>
-                    <div class="container-button">
-                        <a href="#">
-                            <div class="project-button button-preview"><span>Preview</span></div>
-                        </a>
-
-                        <a href="#">
-                            <div class="project-button button-github"><span>Github</span></div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <figure class="img-project">
-                        <img src="./img/project1.png" alt="Imagen del proyecto">
-                        <figcaption class="project-caption">Ahorcado</figcaption>
-                    </figure>
-
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eaque eum fugit
-                        libero provident quis sapiente sed. Accusamus accusantium architecto consequuntur eaque et fuga
-                        ipsam iusto officiis quam suscipit? Ad adipisci deserunt, dolorem eligendi exercitationem, id
-                        inventore laudantium magni modi nisi quae quia quidem ratione sequi soluta tempore velit?</p>
-                    <div class="container-button">
-                        <a href="#">
-                            <div class="project-button button-preview"><span>Preview</span></div>
-                        </a>
-
-                        <a href="#">
-                            <div class="project-button button-github"><span>Github</span></div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <figure class="img-project">
-                        <img src="./img/project1.png" alt="Imagen del proyecto">
-                        <figcaption class="project-caption">Ahorcado</figcaption>
-                    </figure>
-
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eaque eum fugit
-                        libero provident quis sapiente sed. Accusamus accusantium architecto consequuntur eaque et fuga
-                        ipsam iusto officiis quam suscipit? Ad adipisci deserunt, dolorem eligendi exercitationem, id
-                        inventore laudantium magni modi nisi quae quia quidem ratione sequi soluta tempore velit?</p>
-                    <div class="container-button">
-                        <a href="#">
-                            <div class="project-button button-preview"><span>Preview</span></div>
-                        </a>
-
-                        <a href="#">
-                            <div class="project-button button-github"><span>Github</span></div>
-                        </a>
-                    </div>
-                </div>
             </div>
 
         </article>
 
-        <article>
+        <article id="contact">
             <h1 class="title">Contacto</h1>
             <div class="contact-container">
                 <div class="contact-email">
                     <span>gabrielmayorgate@gmail.com</span>
                 </div>
                 <div class="icons-container">
-                    <a href="">
+                    <a href="https://github.com/Gabox08">
                         <img src="./img/icons-github.png" alt="Icono de Github">
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/gabriel-mayorga-b36611231/">
                         <img src="./img/icons-linkedin.png" alt="Icono de Linkedin">
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/gabox_mayorga/">
                         <img src="./img/icons-instagram.png" alt="Icono de instagram">
                     </a>
                 </div>

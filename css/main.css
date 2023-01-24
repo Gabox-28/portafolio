@@ -8,6 +8,7 @@
     --md: 1.6rem;
     --mdl: 1.7rem;
     --lg: 1.8rem;
+    --smlg: 2.4rem;
     --xlg: 3rem;
     --xxlg: 5rem;
 }
@@ -71,6 +72,7 @@ aside{
 .profile-caption{
     font-size: var(--md);
     font-weight: 300;
+    color: greenyellow;
 }
 
 .topics{
@@ -95,10 +97,10 @@ aside{
 }
 
 .topic-button{
-    background-color: midnightblue;
+    background: linear-gradient(90deg, #00d2ff 0%, #387eff 100%);
     width: 160px;
     height: 40px;
-    color: white;
+    color: var(--bg-vrdark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +119,9 @@ aside{
     margin: 0 0 0 50px;
     font-size: var(--xxlg);
     font-weight: 500;
-    color: var(--blue-text);
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section{
@@ -142,6 +146,46 @@ article{
 .container-bio p{
     font-size: var(--mdl);
 }
+
+.container-study{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-study h2{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-study p{
+    font-size: var(--md);
+}
+
+.container-courses{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.course figure img{
+    width: 230px;
+}
+
+/*Módulo Stack*/
 
 .container-stack{
     display: flex;
@@ -188,7 +232,7 @@ article{
 
 .project{
     width: 30%;
-    height: auto;
+    height: 55vh;
     background-color: var(--bg-vrdark-blue);
     display: flex;
     flex-direction: column;
@@ -196,6 +240,7 @@ article{
     border-radius: 8px;
     overflow: hidden;
     margin: 20px 0 20px 0;
+    position: relative;
 }
 
 .img-project img{
@@ -203,7 +248,7 @@ article{
 }
 
 .project-caption{
-    font-size: var(--lg);
+    font-size: var(--smlg);
     text-align: center;
     margin: 10px 0 10px 0;
     font-weight: 500;
@@ -222,6 +267,8 @@ article{
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    position: absolute;
+    bottom: 0;
 }
 
 .container-button a{
