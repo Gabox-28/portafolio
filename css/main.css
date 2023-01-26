@@ -67,6 +67,7 @@ aside{
     font-weight: 500;
     margin-top: 12px;
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .profile-caption{
@@ -232,7 +233,7 @@ article{
 
 .project{
     width: 30%;
-    height: 55vh;
+    height: auto;
     background-color: var(--bg-vrdark-blue);
     display: flex;
     flex-direction: column;
@@ -254,6 +255,14 @@ article{
     font-weight: 500;
 }
 
+.container-project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .project-description{
     width: 90%;
     margin-left: auto;
@@ -267,8 +276,6 @@ article{
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-    position: absolute;
-    bottom: 0;
 }
 
 .container-button a{
@@ -333,6 +340,7 @@ article{
 /* Responsive */
 
 @media(max-width: 768px){
+
     main{
         flex-direction: column;
     }
@@ -342,7 +350,20 @@ article{
         position: static;
     }
 
+    .topics{
+        margin-top: 25px;
+    }
+
     .project{
-        width: 70%;
+        width: 80%;
+    }
+
+    .stack-caption{
+        text-align: center;
+    }
+
+    .container-courses{
+        flex-direction: column;
+        align-items: center;
     }
 }
