@@ -48,7 +48,7 @@ aside{
 
 
 .profile{
-    height: 26%;
+    height: auto;
 }
 
 .profile figure{
@@ -145,7 +145,8 @@ article{
 }
 
 .container-bio p{
-    font-size: var(--mdl);
+    font-size: var(--lg);
+    line-height: 2.7rem;
 }
 
 .container-study{
@@ -305,7 +306,7 @@ article{
 }
 
 
-/* Módulos contacto*/
+/* Módulo contacto*/
 
 .contact-container{
     display: flex;
@@ -316,7 +317,7 @@ article{
 
 .contact-email{
     width: auto;
-    padding: 0 30px 0 30px;
+    padding-left: 30px;
     height: 6vh;
     background-color: var(--bg-vrdark-blue);
     display: flex;
@@ -337,21 +338,64 @@ article{
     margin-bottom: 10vh;
 }
 
+.email{
+    padding-right: 30px;
+}
+
+.email-copy{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.email-copy span{
+    padding-left: 30px;
+    border-left: 1px solid white;
+}
+
+.email-copy:hover{
+    cursor: pointer;
+    background-color: #021d50;
+}
+
 /* Responsive */
 
-@media(max-width: 768px){
+@media(max-width: 1440px) and (min-width: 1366px){
+    aside{
+        width: 40vw;
+    }
+}
 
+@media(max-width: 1280px){
     main{
         flex-direction: column;
     }
 
     aside{
         width: 100vw;
+        height: 55vh;
         position: static;
     }
 
     .topics{
+        height: 45%;
         margin-top: 25px;
+    }
+}
+
+@media(max-width: 768px){
+
+    aside{
+        height: 80vh;
+    }
+
+    .container-study p{
+        width: 90%;
+        text-align: center;
     }
 
     .project{
@@ -360,10 +404,28 @@ article{
 
     .stack-caption{
         text-align: center;
+        width: 90%;
     }
 
     .container-courses{
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-email{
+        width: auto;
+        max-width: 90%;
+    }
+
+    .contact-email span{
+        font-size: var(--sm);
+    }
+
+    .email{
+        padding-right: 15px;
+    }
+
+    .email-copy span{
+        padding-left: 15px;
     }
 }
