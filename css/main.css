@@ -130,6 +130,7 @@ aside{
     font-size: var(--xlg);
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 section{
@@ -396,6 +397,14 @@ article{
         height: 80vh;
     }
 
+    .container-bio{
+        width: 94%;
+    }
+
+    .course{
+        margin-top: 50px;
+    }
+
     .container-study p{
         width: 90%;
         text-align: center;
@@ -408,6 +417,14 @@ article{
     .stack-caption{
         text-align: center;
         width: 90%;
+    }
+
+    .container-stack-img{
+        width: 100%;
+    }
+
+    .img-stack img{
+        width: 100px;
     }
 
     .container-courses{
